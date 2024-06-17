@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import Link from 'next/link';
-import { logoutUser } from '../hooks';
+import { logoutUser } from '@/hooks';
 import { useRouter } from "next/navigation";
 import { useSelector } from "react-redux";
 import { BackButton } from "./BackButton";

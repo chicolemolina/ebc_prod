@@ -1,7 +1,7 @@
 'use client'
 
 import LoginForm from "./components/login-form";
-import { LogoEbc } from '@/app/components';
+import { LogoEbc } from '@/components';
 
 export default function LoginPage() {
   

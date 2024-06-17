@@ -3,7 +3,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { setUserData } from '../store/slices/userSlice';
+import { setUserData } from '@/store/slices/userSlice';
 
 export const useLoginValidation = () => {
     const [ErrorLogin, setErrorLogin] = useState(null);

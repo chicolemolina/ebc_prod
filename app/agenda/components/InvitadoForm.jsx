@@ -2,9 +2,9 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import { Button2, ButtonDefault } from '@/app/components';
-import { ComboBox } from '@/app/components/ComboBox';
-import { useComboBox_Form, useForm } from "../../hooks";
+import { Button2, ButtonDefault } from '@/components';
+import { ComboBox } from '@/components/ComboBox';
+import { useComboBox_Form, useForm } from '@/hooks';
 import axios from "axios";
 import toast from 'react-hot-toast';
 import { useRouter } from "next/navigation";

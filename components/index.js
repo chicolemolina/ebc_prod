@@ -5,7 +5,7 @@ export * from "./ButtonPwa";
 export * from "./Buttons";
 export * from "./ButtonsDefault";
 export * from "./ButtonsIcon";
-export * from "./ComboBox";
+// export * from "./ComboBox";
 export * from "./footer";
 export * from "./LinkSimple";
 export * from "./logo-ebc";

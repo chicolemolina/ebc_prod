@@ -1,8 +1,8 @@
 
 'use client';
 
-import { usePromo } from '../hooks/usePromo';
-import { FlexBox } from '@/app/components';
+import { usePromo } from '../hooks';
+import { FlexBox } from '@/components';
 import { format } from 'date-fns';
 
 const DetallePromocion = ({ params }) => 

@@ -1,6 +1,6 @@
 'use client';
 
-import { Navbar, SideBarNav, Footer } from '@/app/components';
+import { Navbar, SideBarNav, Footer } from '@/components';
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from 'react';
 

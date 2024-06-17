@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { FlexBox } from '@/app/components';
+import { FlexBox } from '@/components';
 import Link from 'next/link';
 import {useRouter} from 'next/navigation';
 

@@ -1,7 +1,7 @@
 'use client';
 
 import DataTable from 'react-data-table-component';
-import { NoDataComponent, BuscadorTabla, PaginationComponentOptions } from '@/app/components/Datatable';
+import { NoDataComponent, BuscadorTabla, PaginationComponentOptions } from '@/components/Datatable';
 import { useDataTable } from './hooks';
 import { useEffect, useState } from 'react';
 import { format } from 'date-fns';

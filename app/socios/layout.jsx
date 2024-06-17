@@ -1,7 +1,7 @@
 'use client'
 
-import { Navbar, SideBarNav, Footer } from '@/app/components';
-import { useCheckAuthentication } from '../hooks';
+import { Navbar, SideBarNav, Footer } from '@/components';
+import { useCheckAuthentication } from '@/hooks';
 
 
 export default function SociosLayout({ children }) {

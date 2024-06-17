@@ -1,5 +1,5 @@
 import { confirmAlert } from 'react-confirm-alert';
-import { ModalConfirm } from '@/app/components';
+import { ModalConfirm } from '@/components';
 import { bajaInvitado } from '../utils/api';
 
 export const bajaEmpleado = (id, setRecarga) => {
