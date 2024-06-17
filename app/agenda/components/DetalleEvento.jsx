@@ -1,7 +1,7 @@
 'use client'
 import React, { useContext, useEffect, useState } from "react";
 import ReactHtmlParser from 'react-html-parser';
-import { FlexBox, Button2, ButtonDefault, Modal } from '@/app/components';
+import { FlexBox, Button2, ButtonDefault, Modal } from '@/components';
 import {
     HiMiniCalendarDays,
     HiMiniMapPin,
@@ -10,7 +10,7 @@ import {
 } from "react-icons/hi2";
 import { PiForkKnifeFill } from "react-icons/pi";
 import axios from "axios";
-import { cambiaf_a_formato_espanol, formatoNumero } from "../../utils/fun_aux";
+import { cambiaf_a_formato_espanol, formatoNumero } from "@/utils";
 import { format } from "date-fns";
 import ModalInscribirme from './ModalInscribirme'; 
 import { RecargaContext } from '../context/RecargaContext';

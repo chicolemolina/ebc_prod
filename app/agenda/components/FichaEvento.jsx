@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Link from 'next/link';
-import { FlexBox, Button2, ButtonDefault, Modal } from '@/app/components';
-import { formatoNumero, cambiaf_a_formato_espanol } from '../../utils/fun_aux';
+import { FlexBox, Button2, ButtonDefault, Modal } from '@/components';
+import { formatoNumero, cambiaf_a_formato_espanol } from "@/utils";
 import { format } from 'date-fns';
 import {
     HiMiniCalendarDays,

@@ -2,9 +2,9 @@
 'use client'
 
 import DataTable from 'react-data-table-component';
-import { FlexBox } from '@/app/components';
-import CajaSocio from '@/app/socios/components/cajaSocio'
-import { NoDataComponent, BuscadorTabla, PaginationComponentOptions } from '@/app/components/Datatable';
+import { FlexBox } from '@/components';
+import CajaSocio from '@/socios/components/cajaSocio'
+import { NoDataComponent, BuscadorTabla, PaginationComponentOptions } from '@/components/Datatable';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useDataTable } from './hooks';

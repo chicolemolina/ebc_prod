@@ -1,4 +1,4 @@
-import { FlexBox, ModalSustituto, Modal } from '@/app/components';
+import { FlexBox, ModalSustituto, Modal } from '@/components';
 import Link from 'next/link';
 import Image from "next/image"
 import { useState } from "react";

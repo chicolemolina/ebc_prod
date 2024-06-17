@@ -1,6 +1,6 @@
 
 import { confirmAlert } from 'react-confirm-alert';
-import { ModalConfirm } from '@/app/components';
+import { ModalConfirm } from '@/components';
 import { cambioMostrar } from '../utils/api';
 
 export const confirmarMostrar = (id, setRecarga) => {

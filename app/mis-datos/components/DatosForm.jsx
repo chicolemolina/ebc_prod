@@ -1,7 +1,7 @@
 
 'use client';
 
-import { FlexBox, ButtonIcon } from '@/app/components';
+import { FlexBox, ButtonIcon } from '@/components';
 import { TiSocialLinkedin, TiSocialFacebook, TiSocialInstagram, TiImage } from "react-icons/ti";
 
 export const MisDatosForm = ({ children, className, formState, onInputChange }) => {

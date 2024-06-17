@@ -1,7 +1,7 @@
 
 import "./globals.css";
 import { Toaster } from 'react-hot-toast';
-import Providers from './store/provider';
+import Providers from '@/store/provider';
 
 export const metadata = {
     title: "EBC APP",

@@ -5,7 +5,7 @@ import {
     HiMiniBuildingOffice  ,
     HiDevicePhoneMobile 
 } from "react-icons/hi2";
-import { FlexBox } from '@/app/components';
+import { FlexBox } from '@/components';
 import Link from 'next/link';
 import Image from "next/image"
 

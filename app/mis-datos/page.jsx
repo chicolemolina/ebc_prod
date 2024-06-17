@@ -1,14 +1,14 @@
 'use client'
 import { MisDatosEmpresaForm, MisDatosForm } from './components';
 
-import { Button2, ButtonDefault } from '@/app/components';
-import { useForm } from '../hooks';
+import { Button2, ButtonDefault } from '@/components';
+import { useForm } from '@/hooks';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import { getSocio } from '../utils/api';
+import { getSocio } from '@/utils';
 import { useDispatch } from 'react-redux';
-import { setUserData } from '../store/slices/userSlice';
+import { setUserData } from '@/store/slices/userSlice';
 
 
 export default function HomeMisDatos() {

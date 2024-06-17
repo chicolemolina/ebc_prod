@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { logoutUser, useLoginValidation } from "../hooks";
+import { logoutUser, useLoginValidation } from '@/hooks';
 import { useRouter } from "next/navigation";
 
 export const useCheckAuthentication = () => 

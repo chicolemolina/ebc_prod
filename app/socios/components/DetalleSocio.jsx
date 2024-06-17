@@ -5,7 +5,7 @@ import DatosSocio from "../components/FichaSocio";
 import DatosEmpresa from "../components/FichaEmpresa";
 import { useSearchParams } from 'next/navigation';
 import axios from 'axios';
-import { getSocio } from '../../utils/api';
+import { getSocio } from '@/utils';
 
 
 
