@@ -1,5 +1,5 @@
 import React from "react";
-import { FlexBox } from '@/app/components';
+import { FlexBox } from '@/components';
 import Link from 'next/link';
 import {
     HiMiniDevicePhoneMobile,

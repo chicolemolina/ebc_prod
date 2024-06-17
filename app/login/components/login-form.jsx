@@ -6,10 +6,10 @@ import {
     HiMiniChevronRight
 } from "react-icons/hi2";
 
-import { Button } from '@/app/components';
+import { Button } from '@/components';
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { logoutUser, useForm, useLoginValidation } from "../../hooks";
+import { logoutUser, useForm, useLoginValidation } from '@/hooks';
 import toast from 'react-hot-toast';
 
 

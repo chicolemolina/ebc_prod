@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import CajaSocio from "./cajaSocio";
-import { getSocios } from "../../utils/api";
+import { getSocios } from "@/utils";
 
 
 const GridSocios = () => {

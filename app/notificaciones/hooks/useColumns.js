@@ -2,7 +2,7 @@
 import { format } from 'date-fns';
 import { HiEye, HiMiniTrash, HiEyeSlash } from "react-icons/hi2";
 import { Tooltip } from 'react-tooltip';
-import { Button } from '@/app/components';
+import { Button } from '@/components';
 import { cambioLeido } from '../utils/api';
 import { confirmarMostrar } from '../utils/helpers';
 

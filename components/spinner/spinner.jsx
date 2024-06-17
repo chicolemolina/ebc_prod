@@ -1,7 +1,7 @@
 "use client"
 import { BeatLoader } from "react-spinners";
 
-const Spinner =  () => {
+export const Spinner =  () => {
     return (
         <div className="spinner">
 
@@ -10,5 +10,3 @@ const Spinner =  () => {
         </div>
     )
 } 
-
-export default Spinner

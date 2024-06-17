@@ -1,7 +1,7 @@
 'use client'
 
-import { FlexBox } from '@/app/components';
-import InvitadoForm from "@/app/agenda/components/InvitadoForm";
+import { FlexBox } from '@/components';
+import InvitadoForm from "@/agenda/components/InvitadoForm";
 
 
 export default function HomeInvitadosEvento({params}) {

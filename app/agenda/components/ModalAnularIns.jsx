@@ -1,5 +1,5 @@
 import { format } from 'date-fns';
-import { cambiaf_a_formato_espanol } from '../../utils/fun_aux';
+import { cambiaf_a_formato_espanol } from "@/utils";
 import {
     HiMiniCalendarDays,
     HiMiniMapPin

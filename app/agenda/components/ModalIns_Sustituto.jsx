@@ -1,5 +1,5 @@
 import { format } from 'date-fns';
-import { cambiaf_a_formato_espanol } from '../../utils/fun_aux';
+import { cambiaf_a_formato_espanol } from "@/utils";
 import {
     HiMiniCalendarDays,
     HiMiniMapPin
@@ -8,8 +8,8 @@ import { useContext } from 'react';
 import toast from 'react-hot-toast';
 import axios from 'axios';
 import { RecargaContext } from '../context/RecargaContext';
-import { useForm } from '../../hooks';
-import { Button } from '@/app/components';
+import { useForm } from '@/hooks';
+import { Button } from '@/components';
 
 
 const ModalInscribirme = ({ onClose, evento }) => {
