@@ -2,9 +2,7 @@
 
 import { useState } from "react";
 import Link from 'next/link';
-import FlexBox from '../../components/box';
-import Button from '../../components/Buttons';
-import ButtonDefault from '../../components/ButtonsDefault';
+import { FlexBox, Button2, ButtonDefault, Modal } from '@/app/components';
 import { formatoNumero, cambiaf_a_formato_espanol } from '../../utils/fun_aux';
 import { format } from 'date-fns';
 import {
@@ -14,7 +12,6 @@ import {
     HiMiniXMark,
     HiCurrencyEuro 
 } from "react-icons/hi2";
-import Modal from '../../components/Modal'; 
 import ModalInscribirme from './ModalInscribirme'; 
 import ModalAnularIns from './ModalAnularIns'; 
 import ModalIns_Sustituto from './ModalIns_Sustituto'; 
@@ -76,9 +73,9 @@ const FichaEvento = ({ evento }) => {
 
                         <div className='flex justify-start'>
                             <Link href={`/agenda/${agenda_CodPK}`}>
-                                <Button>
+                                <Button2>
                                     VER MÁS
-                                </Button>
+                                </Button2>
                             </Link>
                             
                             { 

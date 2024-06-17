@@ -5,11 +5,11 @@ import {
     HiMiniBuildingOffice  ,
     HiDevicePhoneMobile 
 } from "react-icons/hi2";
-import FlexBox from "./box";
+import { FlexBox } from '@/app/components';
 import Link from 'next/link';
 import Image from "next/image"
 
-const ModalSustituto = ({ onClose, socio }) => {
+export const ModalSustituto = ({ onClose, socio }) => {
 
     const {socio_CodPK, socio_Foto, socio_Nombre, socio_Apellidos, socio_Emp_Nombre, asistente_Sustituto_Nombre, asistente_Sustituto_Email, asistente_Sustituto_Telefono} = socio;
     
@@ -72,4 +72,3 @@ const ModalSustituto = ({ onClose, socio }) => {
     );
 }
 
-export default ModalSustituto;

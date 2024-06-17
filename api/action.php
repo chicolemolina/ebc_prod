@@ -1143,7 +1143,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
 				
 
 				header('Content-Type: application/json');
-				echo json_encode($vector_return);
+				echo json_encode($vector_return, JSON_NUMERIC_CHECK);
 				break;
 
 

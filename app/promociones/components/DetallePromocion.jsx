@@ -2,7 +2,7 @@
 'use client';
 
 import { usePromo } from '../hooks/usePromo';
-import FlexBox from '../../components/box';
+import { FlexBox } from '@/app/components';
 import { format } from 'date-fns';
 
 const DetallePromocion = ({ params }) => 

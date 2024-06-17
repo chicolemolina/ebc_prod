@@ -35,7 +35,7 @@ export const useComboBox_Form = (actionVar, CodPKVar, TextoInputVar, auxData, ca
                         //     ...opcion,
                         //     key: opcion[CodPKVar]
                         // }));
-
+                       
                         setOpciones(response.data[auxData]);
                         // setOpciones(opcionesConClaves);
                     } else {
@@ -53,7 +53,6 @@ export const useComboBox_Form = (actionVar, CodPKVar, TextoInputVar, auxData, ca
 
         setSelectedId(defaultOptionId);
     }, [loaded, defaultOptionId]);
-
 
 
     // Encuentra la opción seleccionada usando el id

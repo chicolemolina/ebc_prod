@@ -1,5 +1,5 @@
 import React from "react";
-import FlexBox from "../../components/box";
+import { FlexBox } from '@/app/components';
 import Link from 'next/link';
 import Image from "next/image";
 import {

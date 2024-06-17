@@ -2,9 +2,8 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import Button from '../../components/Buttons';
-import ButtonDefault from "../../components/ButtonsDefault";
-import ComboBox from '../../components/ComboBox/ComboBox';
+import { Button2, ButtonDefault } from '@/app/components';
+import ComboBox from '@/app/components/ComboBox/ComboBox';
 import { useComboBox_Form, useForm } from "../../hooks";
 import axios from "axios";
 import toast from 'react-hot-toast';
@@ -110,7 +109,7 @@ function InvitadoForm({params}) {
     useEffect(() => {
         const event = { target: { name: 'invitado_PerteneceEmpresa', value: invitado_PerteneceEmpresa }};
         handleBothChanges(event);
-    }, [invitado_PerteneceEmpresa]); // El array vacío asegura que esto se ejecute solo una vez al cargar la página
+    }, [invitado_PerteneceEmpresa]);
 
 
     const handleSubmit = async (event) => {
@@ -166,7 +165,7 @@ function InvitadoForm({params}) {
             console.error('Error:', error);
         }
     };
-
+   
     return (
 
         <div className="mb-4 md:min-w-[600px]">
@@ -294,9 +293,9 @@ function InvitadoForm({params}) {
                         BORRAR
                     </ButtonDefault>
 
-                    <Button>
+                    <Button2>
                         GUARDAR INVITADO
-                    </Button>
+                    </Button2>
                 </div>
             </form>
 

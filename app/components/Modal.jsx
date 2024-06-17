@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modal = ({ children }) => {
+export const Modal = ({ children }) => {
 
 
     return (
@@ -12,4 +12,3 @@ const Modal = ({ children }) => {
     );
 }
 
-export default Modal;

@@ -1,7 +1,7 @@
 
 import React from "react";
 
-const FlexBox = ({ children, className }) => {
+export const FlexBox = ({ children, className }) => {
 
     return (
 
@@ -13,7 +13,6 @@ const FlexBox = ({ children, className }) => {
     )
 }
 
-export default FlexBox
 
 
 

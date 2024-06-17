@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { logoutUser } from '../hooks';
 import { useRouter } from "next/navigation";
 import { useSelector } from "react-redux";
-import BackButton from "./BackButton";
+import { BackButton } from "./BackButton";
 import {
 
     HiMiniUserGroup,
@@ -26,7 +26,7 @@ import {
 } from "react-icons/hi2";
 
 
-export default function Navbar() {
+export function Navbar() {
     const router = useRouter();
 
     // state . nombre del slice . nombre del state (variable)

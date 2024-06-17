@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { HiMiniArrowLeft } from "react-icons/hi2";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
-const BackButton = () => {
+export const BackButton = () => {
   const router = useRouter()
   return (
     <div className="relative hidden md:flex">
@@ -19,4 +19,4 @@ const BackButton = () => {
     </div>
   )
 }
-export default BackButton
+

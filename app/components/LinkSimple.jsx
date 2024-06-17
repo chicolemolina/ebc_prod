@@ -1,6 +1,6 @@
 import React from "react";
 
-const LinkSimple = ({ children, className }) => {
+export const LinkSimple = ({ children, className }) => {
 
     return (
 
@@ -12,4 +12,3 @@ const LinkSimple = ({ children, className }) => {
     )
 }
 
-export default LinkSimple

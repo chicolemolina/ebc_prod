@@ -1,7 +1,7 @@
 import React from "react";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
-const ButtonIcon = ({ children, className }) => {
+export const ButtonIcon = ({ children, className }) => {
 
     return (
 
@@ -19,5 +19,3 @@ const ButtonIcon = ({ children, className }) => {
         
     )
 }
-
-export default ButtonIcon

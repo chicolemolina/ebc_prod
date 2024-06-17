@@ -9,7 +9,7 @@ import toast from 'react-hot-toast';
 import axios from 'axios';
 import { RecargaContext } from '../context/RecargaContext';
 import { useForm } from '../../hooks';
-import { Button } from '../../components/button';
+import { Button } from '@/app/components';
 
 
 const ModalInscribirme = ({ onClose, evento }) => {

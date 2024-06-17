@@ -1,9 +1,7 @@
 'use client'
 import React, { useContext, useEffect, useState } from "react";
 import ReactHtmlParser from 'react-html-parser';
-import FlexBox from '../../components/box';
-import Button from '../../components/Buttons';
-import ButtonDefault from '../../components/ButtonsDefault';
+import { FlexBox, Button2, ButtonDefault, Modal } from '@/app/components';
 import {
     HiMiniCalendarDays,
     HiMiniMapPin,
@@ -11,11 +9,9 @@ import {
     HiMiniXMark
 } from "react-icons/hi2";
 import { PiForkKnifeFill } from "react-icons/pi";
-import { useSearchParams } from "next/navigation";
 import axios from "axios";
 import { cambiaf_a_formato_espanol, formatoNumero } from "../../utils/fun_aux";
 import { format } from "date-fns";
-import Modal from '../../components/Modal'; 
 import ModalInscribirme from './ModalInscribirme'; 
 import { RecargaContext } from '../context/RecargaContext';
 import Link from "next/link";
@@ -146,9 +142,9 @@ const DetalleEvento = ({ children, className, params }) => {
                                     :
                                         (new Date(agenda_FechaMax_Inscripcion) >= new Date()) &&
                                             <Link href={`/agenda/${agenda_CodPK}/eventos-invitados`}>
-                                                <Button>
+                                                <Button2>
                                                     AÑADIR INVITADOS
-                                                </Button>
+                                                </Button2>
                                             </Link>
                                 }
 

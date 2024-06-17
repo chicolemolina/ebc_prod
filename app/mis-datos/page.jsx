@@ -1,9 +1,8 @@
 'use client'
 import { MisDatosEmpresaForm, MisDatosForm } from './components';
 
-import Button from '../components/Buttons';
-import ButtonDefault from '../components/ButtonsDefault';
-import { useCheckAuthentication, useForm } from '../hooks';
+import { Button2, ButtonDefault } from '@/app/components';
+import { useForm } from '../hooks';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
@@ -196,9 +195,9 @@ export default function HomeMisDatos() {
                             <ButtonDefault>
                                 CANCELAR
                             </ButtonDefault>
-                            <Button>
+                            <Button2>
                                 GUARDAR
-                            </Button>
+                            </Button2>
 
                         </div>
 

@@ -1,9 +1,8 @@
-import FlexBox from "../../components/box";
-import ModalSustituto from "../../components/ModalSustituto";
+import { FlexBox, ModalSustituto, Modal } from '@/app/components';
 import Link from 'next/link';
 import Image from "next/image"
 import { useState } from "react";
-import Modal from "../../components/Modal";
+
 
 const CajaSocio = ({socio}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);

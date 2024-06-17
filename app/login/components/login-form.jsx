@@ -6,7 +6,7 @@ import {
     HiMiniChevronRight
 } from "react-icons/hi2";
 
-import { Button } from '../../components/button';
+import { Button } from '@/app/components';
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { logoutUser, useForm, useLoginValidation } from "../../hooks";

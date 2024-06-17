@@ -1,6 +1,6 @@
 import { TextField, Autocomplete, Button, Box, Grid } from '@mui/material';
 
-const ComboBox = ({ arrayDatos, handleSubmit, selectedOption, getOptionLabel, isOptionEqualToValue, onChangeFunction }) => {
+export const ComboBox = ({ arrayDatos, handleSubmit, selectedOption, getOptionLabel, isOptionEqualToValue, onChangeFunction }) => {
 
     return (
         <form onSubmit={handleSubmit}>
@@ -37,4 +37,3 @@ const ComboBox = ({ arrayDatos, handleSubmit, selectedOption, getOptionLabel, is
     );
 }
 
-export default ComboBox;

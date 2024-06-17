@@ -1,8 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import FlexBox from "../components/box";
-import LinkSimple from "../components/LinkSimple";
+import { FlexBox, LinkSimple } from '@/app/components';
 import Link from 'next/link';
 import { HiMiniUserGroup,
         HiMiniBriefcase, 

@@ -2,7 +2,7 @@
 import { HiMiniPencilSquare, HiMiniTrash } from "react-icons/hi2";
 import { Tooltip } from 'react-tooltip';
 import Link from 'next/link';
-import { Button } from '../../../../components/button';
+import { Button } from '@/app/components';
 import { bajaEmpleado } from '../utils/helpers';
 
 

@@ -1,8 +1,7 @@
 
 'use client';
 
-import ButtonIcon from '../../components/ButtonsIcon';
-import Flexbox from '../../components/box';
+import { FlexBox, ButtonIcon } from '@/app/components';
 import { TiSocialLinkedin, TiSocialFacebook, TiSocialInstagram, TiImage } from "react-icons/ti";
 
 export const MisDatosForm = ({ children, className, formState, onInputChange }) => {
@@ -12,7 +11,7 @@ export const MisDatosForm = ({ children, className, formState, onInputChange }) 
 
         <div className="mb-4">
 
-            <Flexbox>
+            <FlexBox>
                 <div className="border-b-2 border-neutral-100 py-3 dark:border-white/10 mb-8">
                     <h3 className='text-2xl font-semibold tracking-normal md:text-base lg:text-2xl text-slate-500'>Datos personales</h3>
                 </div>
@@ -188,7 +187,7 @@ export const MisDatosForm = ({ children, className, formState, onInputChange }) 
                     />
                 </div>
 
-            </Flexbox>
+            </FlexBox>
         </div>
     )
 }

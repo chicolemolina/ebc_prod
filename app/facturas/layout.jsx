@@ -1,8 +1,6 @@
 'use client';
 
-import Navbar from '../components/Navbar';
-import SideBarNav from '../components/SidebarNav';
-import Footer from '../components/footer';
+import { Navbar, SideBarNav, Footer } from '@/app/components';
 import { useCheckAuthentication } from '../hooks';
 
 export default function FacturasLayout({ children }) {
