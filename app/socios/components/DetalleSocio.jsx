@@ -1,12 +1,11 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import DatosSocio from "../components/FichaSocio";
-import DatosEmpresa from "../components/FichaEmpresa";
+import { DatosSocio, DatosEmpresa } from '@/app/socios/components'
 import { getSocio } from '@/utils';
 
 
-const DetalleSocio = ({ children, className, params }) => {
+export const DetalleSocio = ({ children, className, params }) => {
 
     // const searchParams = useSearchParams();
     // const socio_CodPK = searchParams.get('socio_CodPK');
@@ -48,7 +47,6 @@ const DetalleSocio = ({ children, className, params }) => {
     )
 }
 
-export default DetalleSocio
 
 
 

@@ -1,10 +1,12 @@
+'use client'
+
 import { FlexBox, ModalSustituto, Modal } from '@/components';
 import Link from 'next/link';
 import Image from "next/image"
 import { useState } from "react";
 
 
-const CajaSocio = ({socio}) => {
+export const CajaSocio = ({socio}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
@@ -51,4 +53,4 @@ const CajaSocio = ({socio}) => {
     );
 }
 
-export default CajaSocio;
+

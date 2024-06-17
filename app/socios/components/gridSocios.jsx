@@ -1,11 +1,11 @@
 "use client"
 
 import { useEffect, useState } from 'react'
-import CajaSocio from "./cajaSocio";
+import { CajaSocio } from '@/app/socios/components'
 import { getSocios } from "@/utils";
 
 
-const GridSocios = () => {
+export const GridSocios = () => {
 
     const GridStyle="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 text-center";
 
@@ -40,4 +40,3 @@ const GridSocios = () => {
     )
 }
 
-export default GridSocios;

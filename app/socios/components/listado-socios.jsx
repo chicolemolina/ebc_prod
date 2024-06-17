@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 import { FlexBox } from '@/components';
 import Link from 'next/link';
 
-export default function listadoSocios() {
+export function listadoSocios() {
 
     const [socios, setSocios] = useState([]);
     const [loaded, setLoaded] = useState(false);

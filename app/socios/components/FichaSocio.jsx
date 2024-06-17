@@ -9,7 +9,7 @@ import {
 import { TiSocialInstagram } from "react-icons/ti";
 import ReactHtmlParser from 'react-html-parser';
 
-const DatosSocio = ({ children, className, socio }) => {
+export const DatosSocio = ({ children, className, socio }) => {
    
     const {socio_Foto, socio_Nombre, socio_Apellidos, socio_Telefono, socio_Email, socio_Perfil_Linkedin, socio_Perfil_Facebook, socio_Perfil_Instagram, socio_Descripcion} = socio;
 
@@ -108,7 +108,6 @@ const DatosSocio = ({ children, className, socio }) => {
     )
 }
 
-export default DatosSocio
 
 
 

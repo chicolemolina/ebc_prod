@@ -1,6 +1,6 @@
 'use client'
 
-import GridSocios from "./components/gridSocios";
+import { GridSocios } from '@/app/socios/components'
 
 export default function Home() {
 

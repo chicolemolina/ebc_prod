@@ -1,5 +1,6 @@
+'use client'
 
-import DetalleSocio from "../../components/DetalleSocio";
+import { DetalleSocio } from '@/app/socios/components'
 
 export default function HomeDetalleSocio({ params }) {
    
