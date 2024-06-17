@@ -3,10 +3,9 @@
 import Link from 'next/link';
 import ButtonTab from '../components/ButtonsTab';
 import { HiMiniCalendarDays, HiMiniCalendar } from "react-icons/hi2";
-import { useEffect, useState } from 'react';
-
+import { useState } from 'react';
 import DataTable from 'react-data-table-component';
-import { BuscadorTabla, NoDataComponent, PaginationComponentOptions } from '../../components/Datatable';
+import { BuscadorTabla, NoDataComponent, PaginationComponentOptions } from '@/app/components/Datatable';
 import { format } from 'date-fns';
 import { useDataTable } from '../eventos-pasados/hooks';
 

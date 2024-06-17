@@ -1,7 +1,7 @@
 import { Autocomplete, Grid, TextField } from '@mui/material'
 import React from 'react'
 
-const ComboBox = ({tamanyoGrid, arrayDatos, getOptionLabel, selectedOption, isOptionEqualToValue, onChangeFunction, name, getOptionKey, placeholder}) => {
+export const ComboBox = ({tamanyoGrid, arrayDatos, getOptionLabel, selectedOption, isOptionEqualToValue, onChangeFunction, name, getOptionKey, placeholder}) => {
    
     return (
         <Grid item md={tamanyoGrid}>
@@ -27,5 +27,3 @@ const ComboBox = ({tamanyoGrid, arrayDatos, getOptionLabel, selectedOption, isOp
         </Grid>
     )
 }
-
-export default ComboBox

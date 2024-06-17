@@ -15,9 +15,29 @@ const eslintRules = {
 };
 
 export default [
-    { languageOptions: { globals: globals.browser } },
+    { 
+        languageOptions: { 
+            globals: globals.browser, 
+            parserOptions: {
+                ecmaVersion: 2021,
+                sourceType: "module",
+                ecmaFeatures: {
+                    jsx: true
+                }
+            }
+        } 
+    },
     pluginJs.configs.recommended,
-    { files: ["**/*.jsx"], languageOptions: { parserOptions: { ecmaFeatures: { jsx: true } } } },
+    { 
+        files: ["**/*.jsx"],
+        languageOptions: { 
+            parserOptions: { 
+                ecmaFeatures: { 
+                    jsx: true 
+                }
+            }
+        }
+    },
     ...fixupConfigRules(pluginReactConfig),
     eslintRules // Include ESLint rules here
 ];

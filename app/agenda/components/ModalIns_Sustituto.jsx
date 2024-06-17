@@ -62,7 +62,6 @@ const ModalInscribirme = ({ onClose, evento }) => {
             {
                 setRecarga(prevRecarga => prevRecarga + 1);   
                 toast.success('¡Acción realizada con éxito!');
-                router.push(`/agenda`); 
             } // fin if (responseData.success) 
             else 
                 toast.error('Ha ocurrido un error al realizar la acción.');

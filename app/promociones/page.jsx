@@ -1,9 +1,8 @@
 'use client';
 
 import DataTable from 'react-data-table-component';
-import { NoDataComponent, BuscadorTabla, PaginationComponentOptions } from '../components/Datatable';
-import FormFiltros from '../components/ComboBox/FormFiltros';
-import ComboBox from '../components/ComboBox/ComboBox';
+import { NoDataComponent, BuscadorTabla, PaginationComponentOptions } from '@/app/components/Datatable';
+import { FormFiltros, ComboBox } from '@/app/components/ComboBox';
 import { useDataTable } from './hooks';
 import { useComboBox } from '../hooks/useComboBox';
 import { useState } from 'react';
@@ -89,8 +88,6 @@ export default function Promociones() {
                 onSort={handleSort} // Maneja el evento de ordenamiento de la tabla es lo mismo que esto: onSort={(column, sortDirection) => handleSort(column, sortDirection)}
                 noDataComponent={<NoDataComponent />}
                 paginationComponentOptions={PaginationComponentOptions()}
-                // Define la función de filtro global
-                onFilter={(filteredData) => setData(filteredData)}
                 subHeader
                 subHeaderComponent={
                     <BuscadorTabla searchText={searchText} handleSearchChange={handleSearchChange} />

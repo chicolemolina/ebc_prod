@@ -1,9 +1,8 @@
 'use client';
 
 import DataTable from 'react-data-table-component';
-import { NoDataComponent, BuscadorTabla, PaginationComponentOptions } from '../components/Datatable';
-import FormFiltros from '../components/ComboBox/FormFiltros';
-import ComboBox from '../components/ComboBox/ComboBox';
+import { NoDataComponent, BuscadorTabla, PaginationComponentOptions } from '@/app/components/Datatable';
+import { FormFiltros, ComboBox } from '@/app/components/ComboBox';
 import { useDataTable } from './hooks';
 import { useComboBox } from '../hooks/useComboBox';
 import { useState } from 'react';

@@ -1,8 +1,8 @@
 
-import { Button, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import React from "react";
 
-const FormFiltros = ({ children, className }) => {
+export const FormFiltros = ({ children, className }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -26,8 +26,4 @@ const FormFiltros = ({ children, className }) => {
         </form>
     )
 }
-
-export default FormFiltros
-
-
 

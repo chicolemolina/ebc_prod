@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { Button2, ButtonDefault } from '@/app/components';
-import ComboBox from '@/app/components/ComboBox/ComboBox';
+import { ComboBox } from '@/app/components/ComboBox';
 import { useComboBox_Form, useForm } from "../../hooks";
 import axios from "axios";
 import toast from 'react-hot-toast';
@@ -59,10 +59,9 @@ function InvitadoForm({params}) {
 
                     if (response.data.success) {
                         setInvitado(response.data.invitadoData);
-                    } else {
-                        setError(response.data.errorMessage);
-                        console.log(error);
-                    }
+                    } 
+                    else 
+                        toast.error(response.data.errorMessage);
 
                 })
                 .catch((error) => {
