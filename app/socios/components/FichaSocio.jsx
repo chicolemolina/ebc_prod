@@ -1,5 +1,5 @@
 import React from "react";
-import { FlexBox } from '@/components';
+import { FlexBox, BotonDescarga_Contacto } from '@/components';
 import Link from 'next/link';
 import Image from "next/image";
 import {
@@ -87,6 +87,10 @@ export const DatosSocio = ({ children, className, socio }) => {
                                 </Link>)
                             }
 
+                        </div>
+
+                        <div>
+                           <BotonDescarga_Contacto />
                         </div>
                     </div>
 
