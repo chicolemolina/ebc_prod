@@ -3,10 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import DatosSocio from "../components/FichaSocio";
 import DatosEmpresa from "../components/FichaEmpresa";
-import { useSearchParams } from 'next/navigation';
-import axios from 'axios';
 import { getSocio } from '@/utils';
-
 
 
 const DetalleSocio = ({ children, className, params }) => {

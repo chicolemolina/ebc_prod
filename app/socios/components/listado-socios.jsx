@@ -1,13 +1,12 @@
 "use client"
 
 import axios from 'axios';
+import toast from 'react-hot-toast';
 import React, { useEffect, useState } from 'react'
 import { FlexBox } from '@/components';
 import Link from 'next/link';
-import {useRouter} from 'next/navigation';
 
 export default function listadoSocios() {
-    const router = useRouter();
 
     const [socios, setSocios] = useState([]);
     const [loaded, setLoaded] = useState(false);
@@ -35,10 +34,9 @@ export default function listadoSocios() {
                 {
                     setLoaded(true);
                     setSocios(response.data.socioData);
-                } else {
-                    setError(response.data.errorMessage);
-                    console.log(error);
-                }
+                } 
+                else 
+                    toast.error(response.data.errorMessage);
                 
             })
             .catch((error) => {

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import toast from 'react-hot-toast';
 import axios from 'axios';
 
 export const usePromo = (partner_CodPK) => 
@@ -33,10 +34,7 @@ export const usePromo = (partner_CodPK) =>
                         setPromo(response.data.partnerData);
                     } 
                     else 
-                    {
-                        setError(response.data.errorMessage);
-                        console.error(response.data.errorMessage);
-                    }
+                        toast.error(response.data.errorMessage);
                 })
                 .catch((error) => {
                     setError(error.message);

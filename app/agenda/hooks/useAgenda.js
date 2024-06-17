@@ -2,6 +2,7 @@
 import { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
 import { RecargaContext } from '../context/RecargaContext';
+import toast from 'react-hot-toast';
 
 export const useAgenda = () => {
 
@@ -29,12 +30,10 @@ export const useAgenda = () => {
 
         axios("/api", requestOptions)
             .then((response) => {
-                if (response.data.success) {
+                if (response.data.success) 
                     setAgenda(response.data.agendaData);
-                } else {
-                    setError(response.data.errorMessage);
-                    console.log(response.data.errorMessage);
-                }
+                else 
+                    toast.error(response.data.errorMessage);
             })
             .catch((error) => {
                 setError(error.message);

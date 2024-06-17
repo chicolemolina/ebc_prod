@@ -2,6 +2,7 @@
 'use client'
 
 import DataTable from 'react-data-table-component';
+import toast from 'react-hot-toast';
 import { FlexBox } from '@/components';
 import CajaSocio from '@/app/socios/components/cajaSocio'
 import { NoDataComponent, BuscadorTabla, PaginationComponentOptions } from '@/components/Datatable';
@@ -59,11 +60,9 @@ export default function HomeAsistentesEvento({params}) {
 				{
 					setLoaded(true);
 					setSocios(response.data.socioData);
-				} else {
-					setError(response.data.errorMessage);
-					console.log(error);
-				}
-				
+				} 
+				else 
+					toast.error(response.data.errorMessage);
 			})
 			.catch((error) => {
 				console.error(error);
@@ -123,8 +122,6 @@ export default function HomeAsistentesEvento({params}) {
 						onSort={handleSort} // Maneja el evento de ordenamiento de la tabla es lo mismo que esto: onSort={(column, sortDirection) => handleSort(column, sortDirection)}
 						noDataComponent={<NoDataComponent />}
 						paginationComponentOptions={PaginationComponentOptions()}
-						// Define la función de filtro global
-						onFilter={(filteredData) => setData(filteredData)}
 						subHeader
 						subHeaderComponent={
 							<BuscadorTabla searchText={searchText} handleSearchChange={handleSearchChange} />

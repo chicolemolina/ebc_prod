@@ -1,4 +1,5 @@
 import axios from "axios";
+import toast from 'react-hot-toast';
 import { useEffect, useState } from "react";
 
 export const useComboBox = () => {
@@ -35,10 +36,9 @@ export const useComboBox = () => {
                     if (response.data.success) {
                         setLoaded(true);
                         setCategorias(response.data.categoriaData);
-                    } else {
-                        setError(response.data.errorMessage);
-                        console.log(error);
-                    }
+                    } 
+                    else 
+                        toast.error(response.data.errorMessage);
 
                 })
                 .catch((error) => {

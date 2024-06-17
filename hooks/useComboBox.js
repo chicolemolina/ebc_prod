@@ -1,4 +1,5 @@
 import axios from "axios";
+import toast from 'react-hot-toast';
 import { useEffect, useState } from "react";
 
 export const useComboBox = (actionVar, CodPKVar, TextoInputVar, auxData, setFiltro) => {
@@ -39,10 +40,8 @@ export const useComboBox = (actionVar, CodPKVar, TextoInputVar, auxData, setFilt
 
                         setOpciones(response.data[auxData]);
                         // setOpciones(opcionesConClaves);
-                    } else {
-                        setError(response.data.errorMessage);
-                        console.log(error);
-                    }
+                    } else 
+                        toast.error(response.data.errorMessage);
 
                 })
                 .catch((error) => {

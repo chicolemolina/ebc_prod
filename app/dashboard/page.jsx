@@ -9,6 +9,7 @@ import { HiMiniUserGroup,
         HiMiniIdentification   
         } from "react-icons/hi2";
 import axios from "axios";
+import toast from 'react-hot-toast';
 
 export default function Home() {
     const HeadingSTyle = "mb-4 text-3xl font-semibold leading-none tracking-tight md:text-2xl lg:text-4xl"
@@ -51,11 +52,9 @@ export default function Home() {
                         setOfertasTotales(response.data.total_ofertas);
                         setEventosTotales(response.data.total_agenda);
                         setPromocionesTotales(response.data.total_promociones);
-                    } else {
-                        setError(response.data.errorMessage);
-                        console.log(error);
-                    }
-
+                    } 
+                    else 
+                        toast.error(response.data.errorMessage);
                 })
                 .catch((error) => {
                     console.error(error);
