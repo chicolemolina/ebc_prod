@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');*/
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f8fa;
+}
+
+/*Hide scrollbar Chrome, Safari, Opera*/
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/*Hide scrollbar Ie. Edge. Firefox*/
+body{
+    -ms-overflow-style: none; /*IE and Edge*/
+    scrollbar-width: none; /*Firefox*/
+}
+
+h1, h2{color: #002432 !important;}
+
+.spinner{display: flex;justify-content: center;align-items: center;height: 100vh;}
+header.hMFeQo{justify-content: flex-start;}

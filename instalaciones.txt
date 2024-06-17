@@ -1,0 +1,16 @@
+npm install date-fns
+npm install react-tooltip
+yarn add @mui/material @emotion/react @emotion/styled
+npm install react-hot-toast
+npm install react-confirm-alert --save
+npm install react-html-parser --force
+
+=======================================
+
+Public Key:
+BGIAQ7aSWHHlycBVkLGnFw0WMEecBBYsRAeTF6v32dlv3q4zG5eCOcvxJmnQqQEVVlJoFxog-X9ndGDSJ_RrgaE
+
+Private Key:
+DX9FlRve-IADQ6EdSinbKCh0VLZB7w2MPvOjs8g2y_M
+
+=======================================
